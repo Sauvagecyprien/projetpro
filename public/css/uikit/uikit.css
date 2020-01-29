@@ -1,0 +1,37 @@
+.uk-button-text {
+  /* 1 */
+  padding: 0;
+  line-height: 1.5;
+  background: none;
+  /* 2 */
+
+  position: relative;
+}
+.uk-button-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  border-bottom: 1px solid #333;
+  transition: right 0.3s ease-out;
+}
+/* Hover + Focus */
+.uk-button-text:hover,
+.uk-button-text:focus {
+  color: #333;
+}
+.uk-button-text:hover::before,
+.uk-button-text:focus::before {
+  right: 0;
+}
+
+
+ .uk-button-text::before {
+  border-bottom-color: #333;
+}
+
+
+
+
+
