@@ -87,7 +87,7 @@ Schema::create('roles', function (Blueprint $table) {
    
 ## modifier la table user et mettre role_id a la place de role 
 
-
+## dans le seeder mettre le role_id en integer
 
 ## cree la table role 
 DB::table('roles')->insert(array(
@@ -117,6 +117,13 @@ public function user() {
  if (Auth::guest() || Auth::user()->role != 'Admin') 
  en 
   if (Auth::guest() || Auth::user()->role_id != 1) {
+  
+  les dossier a changer sont :
+  - le controller admin 
+  - le fichier nav/login
+  - le dashboard 
+  - le tableau affichage utilisateur admin
+  - ne pas oublier l'attribution des roles automatique a l'inscription dans le register et mettre 2 a la place de user
   
   
   
