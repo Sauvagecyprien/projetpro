@@ -59,6 +59,21 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## pour les roles en cles etrangeres 
 
 ## créer  table roles avec comme champs id et role et comme contenu id 1 admin et id 2 user
